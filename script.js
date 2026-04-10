@@ -14,7 +14,7 @@ const whatsappBtn = document.getElementById("whatsappBtn");
 const slides = [
     { src: "photo1.jpeg", caption: "The prettiest smile ever 😊" },
     { src: "photo2.png", caption: "A moment worth remembering forever ✨" },
-    { src: "photo3.pneg", caption: "You make everything more beautiful 💖" }
+    { src: "photo3.jpeg", caption: "You make everything more beautiful 💖" }
 ];
 
 let currentSlide = 0;
