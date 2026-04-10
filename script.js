@@ -102,10 +102,13 @@ function updateSlide() {
     const photoCaption = document.getElementById("photoCaption");
     const dots = document.getElementById("dots");
 
+    if (!slideImage || !photoCaption || !dots) return; // ✅ safety
+
     slideImage.src = slides[currentSlide].src;
     photoCaption.textContent = slides[currentSlide].caption;
 
     dots.innerHTML = "";
+
     slides.forEach((_, index) => {
         const dot = document.createElement("div");
         dot.className = "dot" + (index === currentSlide ? " active" : "");
