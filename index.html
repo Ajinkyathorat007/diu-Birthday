@@ -92,20 +92,27 @@
             <h2 class="section-title">Your Smile = Magic ✨</h2>
 
             <div class="gallery-frame">
-                <img id="slideImage" src="photo1.jpeg" alt="Diu Photo" />
+                <img id="slideImage" src="photo1.jpg" alt="Divya Photo" />
                 <div class="caption" id="photoCaption">The prettiest smile ever 😊</div>
-                <div class="dots" id="dots"></div>
+                <!-- Slide count -->
+                <div class="slide-count" id="slideCount"></div>
+
+                <!-- Progress bar -->
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
             </div>
-
-            
-
 
             <div class="btn-row">
                 <button class="secondary-btn" onclick="prevSlide()">⟵ Prev</button>
-                <button class="primary-btn" onclick="goToScreen('reasonsScreen')">Next 💖</button>
                 <button class="secondary-btn" onclick="nextSlide()">Next ⟶</button>
             </div>
-        </div>
+
+            <div class="btn-row">
+                <button class="primary-btn glow-btn" onclick="goToScreen('reasonsScreen')">
+                    Continue 💖
+                </button>
+            </div>
     </section>
 
     <section class="screen" id="reasonsScreen">
@@ -114,7 +121,7 @@
             <h2 class="section-title">Why you are special 🌸</h2>
 
             <div class="reasons-grid">
-                <div class="reason-card">I Love YOU ✨</div>
+                <div class="reason-card">Your smile brightens everything ✨</div>
                 <div class="reason-card">You make moments feel beautiful 💕</div>
                 <div class="reason-card">Your presence feels warm and peaceful 🌙</div>
                 <div class="reason-card">You are truly one of a kind 💎</div>
@@ -169,7 +176,7 @@
             <p onmouseover="hoverLove()" id="hoverText">
                 Touch me 😊
             </p>
-            <p class="signature">Made with ❤️ by AJJU</p>
+            <p class="signature">Made with ❤️ by Ajju</p>
 
             <div class="btn-row">
                 <button class="primary-btn" onclick="burstConfetti()">Celebrate Again 🎉</button>
