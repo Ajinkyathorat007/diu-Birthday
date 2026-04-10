@@ -35,7 +35,7 @@ function goToScreen(id) {
 function checkAnswer() {
     const ans = answerInput.value.trim().toLowerCase();
 
-    if (ans === "AD") {
+    if (ans === "ad") {
         lockMsg.textContent = "Unlocked successfully 💖";
         playMusic();
         setTimeout(() => startCountdown(), 700);
